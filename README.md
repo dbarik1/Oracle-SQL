@@ -161,6 +161,3 @@ select employee_id, first_name, last_name, department_id, department_name
 from employees natural join departments;
 
 select * from employees join departments using(department_id, manager_id);
-
-
-![image](https://github.com/dbarik1/Oracle-SQL/assets/166466302/3e55c18a-2b15-40c1-bc27-c15b533ca4c2)
