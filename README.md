@@ -1,5 +1,3 @@
-# Oracle-SQL
-
 select * from employees;
 select employee_id, first_name, sysdate, hire_date , trunc((sysdate - hire_date)/365) years_of_exp
 from employees
@@ -9,7 +7,7 @@ select employee_id, first_name, hire_date,
         trunc(hire_date, 'MONTH') as "trunc_roundoff", round(hire_date, 'MONTH') as "round_off"
         from employees;
 
-**--It will exact the day/month/year for that sysdate **       
+--It will exact the day/month/year for that sysdate        
 select extract(DAY from sysdate) from dual;       
 
  
@@ -165,4 +163,4 @@ from employees natural join departments;
 select * from employees join departments using(department_id, manager_id);
 
 
-![image](https://github.com/dbarik1/Oracle-SQL/assets/166466302/719a65b3-7e2f-4876-95b5-62bf19630401)
+![image](https://github.com/dbarik1/Oracle-SQL/assets/166466302/3e55c18a-2b15-40c1-bc27-c15b533ca4c2)
