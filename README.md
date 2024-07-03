@@ -7,7 +7,7 @@ select employee_id, first_name, hire_date,
         trunc(hire_date, 'MONTH') as "trunc_roundoff", round(hire_date, 'MONTH') as "round_off"
         from employees;
 
---It will exact the day/month/year for that sysdate        
+**--It will exact the day/month/year for that sysdate  **      
 select extract(DAY from sysdate) from dual;       
 
  
